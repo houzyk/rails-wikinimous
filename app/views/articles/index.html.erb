@@ -1,3 +1,7 @@
+<% if params[:param] == 'deleted' %>
+  <p class="text-center alert alert-warning">Article was succesfully destroyed</p>
+<%end%>
+
 <ul class="list-group text-center">
 <% @articles.each do |article|%>
   <li class="list-group-item">
